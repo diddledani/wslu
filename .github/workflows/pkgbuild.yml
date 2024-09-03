@@ -51,7 +51,7 @@ jobs:
     container: circleci/ruby:2.3-jessie
     steps:
       - name: Retrive package for deployment
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: PengwinDEBs
       - run: gem install package_cloud
